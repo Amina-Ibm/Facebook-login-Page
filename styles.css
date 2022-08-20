@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2F0ED;
+    position: relative;
+}
+
+main {
+
+    margin: 30px;
+}
+
+h1 {
+    color: #1877F2
+        /*klavika font for body its helvatica or geneva*/
+
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+#tagline {
+    color: #797877;
+    margin-top: 8px;
+}
+
+#accounts {
+    display: flex;
+}
+
+.white-container {
+    margin-top: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 200px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.white-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+.white-container img {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px 10px 0 0;
+}
+
+.grey-area {
+    background-color: #DBD8D3;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px 10px 0 0;
+}
+
+#cancel {
+    position: absolute;
+    color: #EEEFF0;
+    left: 35px;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(63, 62, 62);
+    opacity: 0.5;
+    text-align: center;
+}
+
+#cancel:hover {
+    opacity: 1.0;
+    background-color: #EEEFF0;
+    color: rgb(194, 193, 193);
+    height: 25px;
+    width: 25px;
+    line-height: 22px;
+    font-size: 25px;
+    transition: 0.3s;
+
+
+}
+
+.account-name {
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.add-account {
+    margin-top: 10px;
+    color: #1877F2;
+    text-align: center;
+}
+
+.fa-solid {
+    display: block;
+    text-align: center;
+    margin-top: 80px;
+    color: #1877F2;
+}
+
+form {
+    background-color: white;
+    height: 300px;
+    width: 400px;
+    padding: 20px;
+    box-shadow: 10px;
+    border-radius: 5px;
+    box-shadow: 10px;
+}
+
+#form-container {
+    position: absolute;
+    left: 700px;
+    bottom: -20px;
+
+}
+
+#form-container p {
+    position: absolute;
+    left: 20px;
+    margin-top: 30px;
+}
+
+input {
+    height: 40px;
+    margin: 5px;
+    width: 350px;
+    border-radius: 7px;
+    border: 1.5px solid #EEEFF0;
+
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 0 0 5px #719ECE;
+    caret-color: blue;
+
+}
+
+button {
+    color: white;
+    border-radius: 7px;
+    border: 1.5px solid #EEEFF0;
+}
+
+form h5 {
+    color: #1877F2;
+    text-align: center;
+    margin: 10px;
+}
+
+h5:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+hr {
+    margin-top: 30px;
+    height: 0.1%;
+    border: 1px solid lightgrey;
+}
+
+#create-account {
+    background-color: rgb(52, 153, 59);
+    margin-top: 15px;
+    height: 40px;
+    width: 200px;
+    margin-left: 80px;
+}
+
+#create-account:hover {
+    background-color: rgb(45, 142, 51);
+    cursor: pointer;
+}
+
+#log-in {
+    height: 40px;
+    width: 350px;
+    margin: 5px;
+    background-color: #1877F2;
+}
+
+#log-in:hover {
+    background-color: #1665E5;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #EEEFF0;
+    position: absolute;
+    width: 100ve;
+    padding: 20px;
+    color: #a6a8aa;
+    font-size: 12px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    word-spacing: 12px;
+    list-style: 20px;
+}
+
+@media screen and (max-width:1114px) {
+    #container {
+        left: 70px;
+        margin-right: 22vw;
+
+    }
+
+    #login {
+        right: 30px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    body {
+        height: 150vh;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #container {
+        margin-right: 0;
+        align-items: center;
+        left: 0;
+        right: 20px;
+    }
+
+    .white-container {
+        margin-right: 5px;
+    }
+
+    #form-container {
+        text-align: center;
+        left: 0;
+        margin-right: 0;
+        margin-top: -30px;
+        top: 80px;
+    }
+
+    #container,
+    #form-container {
+        position: relative;
+    }
+
+    footer {
+        position: relative;
+        padding: 20px;
+        width: 100vw;
+
+    }
+}
+
+@media screen and (max-width:670px) {
+    footer {
+        position: relative;
+        top: 100px;
+
+    }
+}
